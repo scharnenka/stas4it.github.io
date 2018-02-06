@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS_CHESS_UL</title>
+    <style>
+        ul {
+            display: block;
+            list-style: none;
+            padding: 0;
+            height: 50px;
+            width: 460px;
+            margin: 0;
+        }
+        li {
+            display: block;
+            float: left;
+            width: 50px;
+            height: 50px;
+            border: solid gray 1px;
+        }
+
+        ul:first-child li{
+            background-color: #90ee90 !important;
+            width: 50px;
+            height: 20px;} 
+    ul:last-child li {
+            background-color: #90ee90 !important;
+            height: 20px;}
+    ul li:first-of-type {
+            background-color: #90ee90 !important;
+            width: 20px;}
+    ul li:last-of-type {
+            background-color: #90ee90 !important; 
+            width: 20px;}
+   ul:nth-child(odd)  li:nth-child(even) {
+            background-color: black;}
+    ul:nth-child(even)  li:nth-child(odd) {
+            background-color: black;}
+            ul:first-child {
+                height: 20px;
+                background-color: #90ee90;
+            }
+    </style>
+</head>
+<body>
+    <div>
+    <ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+    <ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+    <ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+    <ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+    <ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+    <ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+    <ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+    <ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+    <ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+    <ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+</div> 
+</body>
+</html>
