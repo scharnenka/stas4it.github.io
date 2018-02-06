@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Links</title>
+    <style>
+        td {
+            display: inline-block;
+            border-right: 3px solid red;
+            padding: 5px;
+            }
+        a {
+            color: green;
+        } 
+        div:nth-child(2) div {
+            display: inline-block;
+            padding: 5px 5px 5px 1px;
+            border-right: 3px solid red; 
+            margin: 0;
+        }
+        div:nth-child(2) {
+            margin: 6px;
+        }
+        ul {
+            list-style: none;
+            padding: 2px;
+            margin-top: 7px;
+        }
+        div:nth-child(4) ul {
+            margin-top: 35px;
+        } 
+        li {
+            display: block;
+            float: left;
+            border-right: 3px solid red;
+            padding: 5px;
+        } 
+        div:nth-child(4) ul li {
+            display: inline-block;
+        }
+        div:nth-child(4) {
+            clear: both;            
+        }
+        
+    </style>
+</head>
+<body>
+<div> <!-- обычная таблица-->
+   <table>       
+       <tr>
+           <td><a href="#">первая ссылка</a></td>
+           <td><a href="#">вторая ссылка</a></td>
+           <td><a href="#">третья ссылка</a></td>
+           <td><a href="#">четвертая ссылка</a></td>
+           <td><a href="#">пятая ссылка</a></td>
+       </tr>
+   </table>
+</div>
+
+<div> <!-- display: inline-block-->
+    <div><a href="#">первая ссылка</a></div>
+    <div><a href="#">вторая ссылка</a></div>
+    <div><a href="#">третья ссылка</a></div>
+    <div><a href="#">четвертая ссылка</a></div>
+    <div><a href="#">пятая ссылка</a></div>
+</div>
+
+<div> <!-- ul, display: block, float: left -->
+    <ul> 
+        <li><a href="#">первая ссылка</a></li>
+        <li><a href="#">вторая ссылка</a></li>
+        <li><a href="#">третья ссылка</a></li>
+        <li><a href="#">четвертая ссылка</a></li>
+        <li><a href="#">пятая ссылка</a></li>
+    </ul>
+</div>
+
+<div> <!-- ul, display: inline -->
+    <ul> 
+        <li><a href="#">первая ссылка</a></li>
+        <li><a href="#">вторая ссылка</a></li>
+        <li><a href="#">третья ссылка</a></li>
+        <li><a href="#">четвертая ссылка</a></li>
+        <li><a href="#">пятая ссылка</a></li>
+    </ul>
+
+</div>
+    
+</body>
+</html>
