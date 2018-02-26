@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MAKET_FORM</title>
+    <style>
+        .col-xs-12 {           
+            padding-left: 0px;}
+        body {
+                padding: 1em;
+            }
+        .check {
+            display: inline-block;
+        }
+        .col-sm-2.menu {
+            width: 170px;
+        }
+
+        .col-md-2, .col-md-10 {
+
+            padding: 0px;
+        }
+
+        .row    {
+        margin-right: 0px;
+        margin-left: 0px;
+         }
+         #name {
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+    <div class="basic">
+        <form method=post action='http://fe.it-academy.by/TestForm.php'>
+            <div class="col-xs-12">Для публикации вашей статьи, заполните пожалуйста следующую форму:</div><br><br>
+            <div class="row" style="margin-bottom:5px;">
+                <div class="col-md-2">Название статьи:</div>
+                <div class="col-md-10"><input type="text" name="name" id="name" placeholder="название статьи"></div>
+              </div>
+            <div class="row">
+            <div class="col-xs-12 col-sm-2 menu">Рубрика:</div>
+            <div><select name='animalkind' class="col-sm-2 col-xs-12" style="margin-bottom: 0.5em; min-width: 200px;">
+                <option value=1>компьютерная техника</option>
+                <option value=2>графика и дизайн</option>
+                <option value=3 selected>программирование</option>
+            </select>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-xs-12 col-sm-2 menu">Публикация:</div>
+        <div class="col-sm-1 col-xs-12" style="min-width: 90px;"><input id="my-radio" name="radio" type="radio" required >на сайте</div>
+        <div class="col-sm-1 col-xs-12" style="min-width: 100px;"><input id="my-radio" name="radio" type="radio" required >в журнале</div>
+        <div class="col-sm-2 col-xs-12" style="min-width: 180px;"><input id="my-radio" name="radio" type="radio" required >на сайте и в журнале</div>
+        </div>
+        <div class="row">
+        <div>Разрешить комментарии:
+        <input id="my-checkbox" type="checkbox" checked >
+        </div>
+    </div>
+        <div class="text">
+            Текст статьи:<br>       
+            <textarea name='mytext' class="col-xs-12" style="margin-bottom: 0.5em;"></textarea>
+            <input type="submit" value="Опубликовать" >
+        </div>
+     </form>   
+</div> 
+    
+</body>
+</html>
