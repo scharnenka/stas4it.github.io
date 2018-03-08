@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TEST_SVG</title>
+    <style>
+      
+        .layer1 {
+width: 100vw;
+height: 100vh;
+            position: relative;
+        }
+        .layer2 {
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+        }
+
+       
+            svg:hover .eye  {
+                fill: blueviolet;
+            }
+            svg:hover .basic
+            {
+                fill: orange;
+                stroke: orangered;
+                stroke-width: 3px;
+            }
+        
+
+    </style>
+</head>
+<body>
+    <div class="layer1" >
+
+<div class="layer2">
+
+    
+    <svg x=50% y=50% width=300 height=300 >
+    <ellipse rx="75" ry="20" cx="150" cy="270" fill="lightgrey"/>
+    <circle r="120" cx="150" cy="150" fill="gold" class="basic" />
+    <circle r="50" cx="100" cy="120" fill="white"/>
+    <circle r="50" cx="170" cy="120" fill="white"/>
+    <circle r="10" cx="100" cy="120" fill="black" class="eye" />
+    <circle r="10" cx="170" cy="120" fill="black" class="eye" />
+    <ellipse rx="10" ry="20" cx="135" cy="210" fill="crimson"/>
+</svg>
+</div>
+</div>
+
+    <line x1=20 y1=20 x2=200 y2=100 stroke-width=10 stroke=orange />
+</body>
+</html>
