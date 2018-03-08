@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reverset</title>
+</head>
+<body>
+    <script>
+  
+    var a=[1,2,3,4,5];
+    
+    function test(massive) {
+            for (var i = 0, n = Math.floor(massive.length / 2); i < n; i++) {
+                var t = massive[i];
+                massive[i] = massive[massive.length - 1 - i];
+                massive[massive.length - 1 - i] = t;
+            }
+            console.log(massive);
+        }
+
+        test(a);   
+    </script>
+</body>
+</html>

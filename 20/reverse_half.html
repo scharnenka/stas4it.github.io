@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reverse_half</title>
+</head>
+<body>
+    <script>
+        var a=[1,2,3,4,5]
+        var b=[1,2,3,4,5,6,7,8,9,10]
+        var c=[1,2,3,4,5,6,7]
+        function test(massive) {
+
+            if (massive.length % 2 !=0)
+
+            {
+             for (var i = 0, n = Math.floor(massive.length / 2); i < n; i++) {
+                var t = massive[i];
+                massive[i] = massive[Math.floor(massive.length / 2)+1 + i];
+                massive[Math.floor(massive.length / 2)+1 + i] = t;
+            }
+            console.log(massive);
+        }
+        else 
+        {
+            for (var i = 0, n = Math.floor(massive.length / 2); i < n; i++) {
+                var t = massive[i];
+                massive[i] = massive[Math.floor(massive.length / 2)+ i];
+                massive[Math.floor(massive.length / 2)+ i] = t;
+            }
+            console.log(massive);
+        }
+            }
+
+        test(a); 
+        test(b); 
+        test(c); 
+    </script>
+</body>
+</html>

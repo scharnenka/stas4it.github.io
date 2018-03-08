@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript_1</title>
+</head>
+<body>
+    <script>
+        var pension;
+        var gender=confirm('Ваш пол - мужской?');
+        var name=prompt('Введите ваше имя');
+        var Surname=prompt('Введите вашу Фамилию');
+        var SecindName=prompt('Введите ваше Отчество');
+        var age=prompt('Введите ваш возраст');        
+        gender=(gender)?'мужской':'женский';
+        pension=(age<65)?"да":"нет";
+        console.log(gender);
+        alert('ваше ФИО: '+Surname+' '+name+' '+SecindName+"\r\n"+'ваш возраст в годах: '+age+"\r\n"+'ваш возраст в днях: '+age*365+"\r\n"+'через 5 лет вам будет: '+age+5+"\r\n"+'ваш пол: '+gender+"\r\n"+'вы на пенсии: '+pension);
+    </script>
+</body>
+</html>

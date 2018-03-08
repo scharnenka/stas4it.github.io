@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>COUNTRIES</title>
+</head>
+<body>
+        <input type='button' value='ввод информации о стране' onclick='input( )'>
+        <input type='button' value='получение информации о стране' onclick='info( )'>
+        <input type='button' value='перечень всех стран' onclick='listX( )'>
+        <input type='button' value='удаление информации о стране' onclick='deleteCountry( )'>
+
+        <script>
+
+            var countries ={'Германия':'Берлин', 'Венгрия':'Будапешт', 'Франция':'Париж'};
+        
+        function input ( ) {
+            countries[prompt('Введите название страны:')]=prompt('Введите название столицы:');
+        }
+
+        function info (сountryName) {
+            var сountryName=prompt('Введите название страны:');
+
+            if ( сountryName in countries )
+                alert( 'страна: ' + сountryName + ' столица: ' + countries[сountryName] );
+            else
+            alert( 'нет информации о стране ' + сountryName + '!' );
+            }
+
+            function listX () {
+                var res="";
+                for ( var key in countries )
+            {res+='\n'+key+': '+ countries[key];
+                }
+                alert(res); 
+            }
+
+            function deleteCountry( ) {
+                delete countries[prompt('Информацию о какой стране удалить?')];
+
+            }
+               
+        </script>
+    
+</body>
+</html>
