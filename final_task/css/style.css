@@ -1,11 +1,4 @@
 
-body a {
-  transition: 0.5s all;
-  -webkit-transition: 0.5s all;
-  -o-transition: 0.5s all;
-  -moz-transition: 0.5s all;
-  -ms-transition: 0.5s all;
-}
 html, body{
 	font-family: 'DidactGothic';
 	font-size: 100%;
@@ -53,49 +46,7 @@ html, body{
   font-family: 'DidactGothic';
   text-decoration:none;
 }
-/* Effect 1: Brackets */
-.cl-effect-1 a::before,
-.cl-effect-1 a::after {
-	display: inline-block;
-	opacity: 0;
-	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
-	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
-	-o-transition: -o-transform 0.3s,opacity 0.2s;
-	-ms-transition:-ms-transform 0.3s, opacity 0.2s;
-	transition: transform 0.3s, opacity 0.2s;
-}
 
-.cl-effect-1 a::before {
-	margin-right: 10px;
-	content: '[';
-	-webkit-transform: translateX(20px);
-	-moz-transform: translateX(20px);
-	-o-transform: translateX(20px);
-	-ms-transform: translateX(20px);
-	transform: translateX(20px);
-}
-
-.cl-effect-1 a::after {
-	margin-left: 10px;
-	content: ']';
-	-webkit-transform: translateX(-20px);
-	-moz-transform: translateX(-20px);
-	-o-transform: translateX(-20px);
-	-ms-transform: translateX(-20px);
-	transform: translateX(-20px);
-}
-
-.cl-effect-1 a:hover::before,
-.cl-effect-1 a:hover::after,
-.cl-effect-1 a:focus::before,
-.cl-effect-1 a:focus::after {
-	opacity: 1;
-	-webkit-transform: translateX(0px);
-	-moz-transform: translateX(0px);
-	-o-transform: translateX(0px);
-	-ms-transform: translateX(0px);
-	transform: translateX(0px);
-}
 .address h5{
   font-size: 1.3em;
   line-height: 31px;
@@ -905,10 +856,7 @@ h5.typ1{
 .progress-bar-inverse {
   background-color: #757575;
 }
-.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
-  background-color:#5bb2fc; !important;
-  border-color:#5bb2fc; !important;
-}
+
 .grid_3 p,.page-header p {
   color: 888;
   font-size: 0.8em;
@@ -1074,15 +1022,7 @@ padding: 5em 0;
 .blog-main p a{
   color: #171717;
 }
-.blog-main p a:hover{
-	text-decoration:underline;
-	transition: 0.5s all ease;
-	-webkit-transition: 0.5s all ease;
-	-moz-transition: 0.5s all ease;
-	-o-transition: 0.5s all ease;
-	-ms-transition: 0.5s all ease;
-	color:#999;
-}
+
 a.bg {
   color: #FF6A4A;
   font-size: 1.3em;
@@ -1124,16 +1064,7 @@ a.bg {
   border-bottom: 2px solid #FF6A4A;
   border-top: 2px solid #FF6A4A;
 }
-.b-btn a:hover{
-	color:#d3d3d3;
-	border-bottom: 2px solid #d3d3d3;
-	border-top: 2px solid #d3d3d3;
-	transition: 0.5s all ease;
-	-webkit-transition: 0.5s all ease;
-	-moz-transition: 0.5s all ease;
-	-o-transition: 0.5s all ease;
-	-ms-transition: 0.5s all ease;
-}
+
 .blog-main-one {
 	border-bottom: 1px solid rgba(153, 153, 153, 0.2);
 }
@@ -2105,4 +2036,3 @@ span.menu {
 	.label {
 		padding: 0px 6px;
 	}
-}
