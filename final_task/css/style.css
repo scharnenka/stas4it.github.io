@@ -821,13 +821,6 @@ h5.typ1{
 .progress-bar-inverse {
   background-color: #757575;
 }
-
-.grid_3 p,.page-header p {
-  color: 888;
-  font-size: 0.8em;
-  margin-bottom: 1em;
-  font-weight: 300;
-}
 .bs-docs-example {
   margin: 1em 0;
 }
