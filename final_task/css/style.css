@@ -12,7 +12,6 @@ html, body{
    font-family: 'Comfortaa-Regular';
    src: url(../fonts1/Comfortaa-Regular.ttf)format('truetype');
 }
-/*-- banner --*/
 .banner-left{
   background: #75655D;
   background-size: cover;
@@ -73,7 +72,6 @@ html, body{
   width: 50%;
   margin: 20em 0 0 0;
 }
-/*-- welcome --*/
 .welcome{
 	padding:3em 0;
 }
@@ -107,7 +105,6 @@ html, body{
 .welcome-right img{
 	width:100%;
 }
-/*-- services --*/
 .services{
 	background:url(../images/4.jpg) no-repeat 0px 0px;
 	background-size:cover;
@@ -149,7 +146,6 @@ html, body{
   margin: 1em auto;
   line-height: 1.8em;
 }
-/*------------------ Slider Part starts Here----------*/
 #slider2,
 #slider3 {
   box-shadow: none;
@@ -327,7 +323,6 @@ ul.social-slide li i.mac{
     top: 47%;
     }
 }
-/*----*/
 .callbacks_tabs a{
  visibility: hidden;
 }
@@ -347,11 +342,6 @@ ul.social-slide li i.mac{
   -o-border-radius: 30px;
   -ms-border-radius: 30px;
 }
-.callbacks_here a:after{
-	border: 2px solid #FFFFFF;
-	background: #FFF;
-}
-/*-- work --*/
 .work{
 	padding:5em 0;
 }
@@ -418,7 +408,6 @@ ul.social-slide li i.mac{
 .work-grid-middle img{
 	width:100%;
 }
-/*-- news --*/
 .news{
 	background: #ececec;
 	padding: 5em 0;
@@ -477,7 +466,6 @@ ul.social-slide li i.mac{
   top: 10px;
   right: 14px;
 }
-/*-- footer --*/
 .footer{
   background: url(../images/footer.jpg) no-repeat 0px 0px;
   background-size: cover;
@@ -586,7 +574,6 @@ color: #FFFFFF;
   border-top: 2px solid #FF6A4A;
   color: #FF6A4A;
 }
-/*-- about --*/
 .about {
   padding: 3em 0;
 }
@@ -710,7 +697,6 @@ color: #FFFFFF;
   margin: .5em 0 0 0;
   line-height: 1.8em;
 }
-/*-- typography --*/
 .typography{
 	padding:5em 0;
 }
@@ -860,7 +846,6 @@ section#tables  p {
 h1.t-button,h2.t-button,h3.t-button,h4.t-button,h5.t-button {
   margin-top:0.5em
 }
-/*-- gallery --*/
 .gallery {
   padding: 5em 0;
 }
@@ -933,7 +918,6 @@ h1.t-button,h2.t-button,h3.t-button,h4.t-button,h5.t-button {
   text-transform: capitalize;
   text-align: center;
 }
-/*-- blog--*/
 .blog {
 padding: 5em 0;
   background: #F9F9F9;
@@ -1022,7 +1006,6 @@ a.bg {
   border-bottom: 2px solid #FF6A4A;
   border-top: 2px solid #FF6A4A;
 }
-
 .blog-main-one {
 	border-bottom: 1px solid rgba(153, 153, 153, 0.2);
 }
@@ -1206,7 +1189,6 @@ p.bg {
   font-size: 1.3em;
   font-weight: 400;
 }
-/*-- contact--*/
 .contact {
 	padding: 5em 0;
 }
@@ -1322,7 +1304,6 @@ p.bg {
 span.menu {
   display: none;
 }
-/*-- responsive-design starts-here --*/
 @media screen and (max-width: 1366px) {
 	.address {
 	    width: 73%;
