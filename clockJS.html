@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Часы</title>
+</head>
+
+<body>
+
+
+
+<script type="text/javascript">  
+// yellow circle
+var circle=document.createElement('div');
+circle.style.height="500px";
+circle.style.width="500px";
+circle.style.borderRadius="50%";
+circle.style.backgroundColor="yellow";
+circle.style.position="fixed";
+circle.style.left="25%";
+circle.style.top="10%";
+document.body.appendChild(circle);
+
+// ---------------------------------
+
+//create <span id="time"> и digital clock
+var newSpan=document.createElement('span');
+newSpan.innerHTML="00:00:00";
+newSpan.id="time";
+newSpan.style.position="absolute";
+newSpan.style.left="45%";
+newSpan.style.top="30%";
+circle.appendChild(newSpan);
+
+// create second hand
+var secondHand=document.createElement('div');
+secondHand.style.height="240px";
+secondHand.style.borderLeft="2px solid black";
+secondHand.style.position="absolute";
+secondHand.style.top="0%";
+secondHand.style.left="250px";
+circle.appendChild(secondHand);
+
+// create minute hand
+var minuteHand=document.createElement('div');
+minuteHand.style.height="240px";
+minuteHand.style.borderLeft="4px solid orange";
+minuteHand.style.position="absolute";
+minuteHand.style.top="0%";
+minuteHand.style.left="250px";
+circle.appendChild(minuteHand);
+
+// create hour hand
+var hourHand=document.createElement('div');
+hourHand.style.height="240px";
+hourHand.style.borderLeft="8px solid red";
+hourHand.style.position="absolute";
+hourHand.style.top="0%";
+hourHand.style.left="250px";
+circle.appendChild(hourHand);
+
+
+setInterval(digClock, 1000); 
+
+function digClock() {  
+date = new Date(),  
+h = date.getHours(),  
+m = date.getMinutes(),  
+s = date.getSeconds(),  
+h = (h < 10) ? '0' + h : h,  
+m = (m < 10) ? '0' + m : m,  
+s = (s < 10) ? '0' + s : s,  
+document.getElementById('time').innerHTML = h + ':' + m + ':' + s;    
+
+// move second hand
+
+secondHand.style.transformOrigin = "center bottom";
+secondHand.style.transform="rotate(" + (s*6)+"deg)";
+
+// move second hand
+
+minuteHand.style.transformOrigin = "center bottom";
+minuteHand.style.transform="rotate(" + (m*6)+"deg)";
+
+// move hour hand
+
+hourHand.style.transformOrigin = "center bottom";
+hourHand.style.transform="rotate(" + (h*30)+"deg)";
+
+} 
+
+// ---------------------------------
+
+function createClockFace (x, y,n) {
+var newNum=document.createElement('span');
+var newNumeral=document.createElement('div');
+newNumeral.style.height="40px";
+newNumeral.style.width="40px";
+newNumeral.style.borderRadius="50%";
+newNumeral.style.backgroundColor="green";
+newNumeral.style.position="absolute";
+newNumeral.style.left=x + "px";
+newNumeral.style.top=y + "px";
+newNum.innerHTML=n;
+newNum.style.position="absolute";
+newNum.style.top="50%";
+newNum.style.left="50%";
+newNum.style.transform="translate(-50%, -50%)";
+circle.appendChild(newNumeral);
+newNumeral.appendChild(newNum);
+}
+
+var R=190;
+var rad = 0;
+var n=7;
+for (var grad = 0; grad < 360; grad += 30)
+{
+    rad = (grad * (Math.PI/180));
+    Y = R * Math.cos(rad)+235;
+    X = R * Math.sin(rad)+235;
+	console.log("x: "+X+"; Y: "+Y+"; n: "+n);
+	n--;
+	if (n<0) {
+	n+=12
+	}
+	
+		createClockFace(X, Y, n);
+	
+		
+}
+
+
+</script>
+
+</body>
+
+</html>
