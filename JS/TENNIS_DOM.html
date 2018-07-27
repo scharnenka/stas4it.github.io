@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Теннис</title>
+</head>
+<body>
+
+    <script>
+
+        var container=document.body;
+
+      var btnStart=document.createElement('input');
+      btnStart.type='button';
+      btnStart.value='START';
+      container.appendChild(btnStart);  
+
+// create game field
+      var gameField=document.createElement('div'); 
+      gameField.style.width="600px";
+      gameField.style.height="400px";
+      gameField.style.position='relative';
+      gameField.style.background="yellow";
+      gameField.style.border='solid black 2px';
+      container.appendChild(gameField);
+
+// create game ball
+      var gameBall=document.createElement('div');
+      gameBall.style.borderRadius='50%';
+      gameBall.style.backgroundColor='red';
+      gameBall.style.width='40px';
+      gameBall.style.height='40px'; 
+      gameBall.style.position='absolute';
+      gameField.appendChild(gameBall);
+
+    </script>
+
+
+    
+</body>
+</html>
