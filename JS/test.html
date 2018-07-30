@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test</title>
+</head>
+<body>
+    <script>
+    function GetSum( a,b )
+{
+   var sumA=0;
+   var sumB=0;
+   var sum=0;
+   getSumA(a);
+   getSumB(b);
+    
+    function getSumA (a) {
+        
+    if (a>0){
+     if (a==0) {
+         return 0;} else {
+     sumA+=(a+getSumA(a-1));
+     return sumA;
+     }
+    } else {
+        if (a==0) {
+         return 0;} else {
+     sumA+=(a+getSumA(a+1));
+     return sumA;
+     }
+    }    
+}
+
+function getSumB (b) {
+        
+    if (b>0){
+     if (b==0) {
+         return 0;} else {
+     sumB+=(b+getSumA(b-1));
+     return sumB;
+     }
+    } else {
+        if (b==0) {
+         return 0;} else {
+     sumB+=(b+getSumB(b+1));
+     return sumB;
+     }
+    }    
+}
+
+if (a==b){sum=a;
+} else {sum=sumA+sumB;}
+return sum;
+console.log(sumA);
+console.log(sumB);
+}
+
+console.log(GetSum(-3, 3));
+    
+    
+    </script>
+    
+</body>
+</html>
